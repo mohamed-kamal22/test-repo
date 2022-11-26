@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+@font-face {
+    font-family: ArabHelvetica;
+    src: url(../fonts/ArabHelvetica.ttf);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: ArabHelvetica;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    direction: rtl;
+    text-align: initial;
+}
