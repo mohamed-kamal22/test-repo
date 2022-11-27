@@ -20,6 +20,12 @@ p {
     margin: 0;
 }
 
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 body {
     direction: rtl;
     text-align: initial;

@@ -7,7 +7,7 @@ footer {
     background: #303741;
 
     .header-col {
-        font-size: 18px;
+        font-size: $font-18;
         margin-bottom: 25px;
     }
 
@@ -26,7 +26,6 @@ footer {
                 div {
                     &:first-child {
                         border: 1px solid #595959;
-                        // padding: 10px 15px;
                         width: 50px;
                         height: 50px;
                         border-radius: 5px;
@@ -35,7 +34,7 @@ footer {
                         justify-content: center;
                         
                         i {
-                            font-size: 26px;
+                            font-size: $font_26;
                         }
                     }
 
@@ -58,7 +57,7 @@ footer {
         p {
             span {
                 &:first-child {
-                    font-weight: bold;
+                    font-weight: $font_weight_bold;
                 }
             }
         }

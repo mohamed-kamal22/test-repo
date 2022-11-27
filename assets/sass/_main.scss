@@ -53,7 +53,7 @@ main {
                     }
                 }
             }
-            
+
             @media #{$small_mobile} {
                 .row {
                     .mr-b-sm {
@@ -80,7 +80,7 @@ main {
                     .card-title {
                         margin-bottom: 20px;
                         color: #404040;
-                        font-size: 28px;
+                        font-size: $font-28;
                         line-height: 1.4;
                         letter-spacing: 1px;
                         height: 35%;
@@ -99,7 +99,7 @@ main {
                     }
 
                     .apply-now {
-                        font-size: 20px !important;
+                        font-size: $font-20 !important;
                         position: absolute;
                         bottom: 40px;
                         display: flex;
@@ -173,7 +173,7 @@ main {
 
                 p {
                     margin-top: 5px;
-                    font-size: 16px;
+                    font-size: $font-16;
                     color: rgba(24, 24, 24, 0.67);
                 }
             }
@@ -182,8 +182,8 @@ main {
                 p {
                     &:first-child {
                         color: #181818;
-                        font-size: 22px;
-                        font-weight: bold;
+                        font-size: $font_22;
+                        font-weight: $font_weight_bold;
                         margin-bottom: 15px;
 
                         @media #{$tab_device} {
@@ -193,7 +193,7 @@ main {
 
                     &:last-child {
                         color: rgba(24, 24, 24, 0.6);
-                        font-size: 16px;
+                        font-size: $font-16;
 
                         @media #{$tab_device} {
                             font-size: $font_12;
@@ -214,7 +214,7 @@ main {
 
             p {
                 color: #393939;
-                font-size: 14px;
+                font-size: $font-14;
             }
         }
 
@@ -257,12 +257,12 @@ main {
                     font-size: $font_32;
                     color: #fff;
                     margin-bottom: 15px;
-                    font-weight: bold;
+                    font-weight: $font_weight_bold;
 
                     @media #{$large_mobile} {
                         font-size: $font_28;
                     }
-    
+
                     @media #{$small_mobile} {
                         font-size: $font_26;
                     }
@@ -275,7 +275,7 @@ main {
                     @media #{$large_mobile} {
                         font-size: $font_18;
                     }
-    
+
                     @media #{$small_mobile} {
                         font-size: $font_16;
                     }
@@ -316,7 +316,7 @@ main {
                     &:first-of-type {
                         color: #18191F;
                         font-size: $font_24;
-                        font-weight: bold;
+                        font-weight: $font_weight_bold;
                         margin-bottom: 6px;
 
                         @media #{$large_mobile} {
@@ -379,7 +379,7 @@ main {
 
             p {
                 font-size: $font_32;
-                font-weight: bold;
+                font-weight: $font_weight_bold;
 
                 @media #{$large_mobile} {
                     font-size: $font_28;
@@ -400,6 +400,7 @@ main {
                 height: 200px;
                 border: 1px solid #D9D9D9;
                 border-radius: 30px;
+
                 &:nth-child(2) {
                     margin: 0 20px;
                 }
@@ -414,12 +415,12 @@ main {
             p {
                 &:first-child {
                     font-size: $font_32;
-                    font-weight: bold;
+                    font-weight: $font_weight_bold;
 
                     @media #{$large_mobile} {
                         font-size: $font_28;
                     }
-    
+
                     @media #{$small_mobile} {
                         font-size: $font_26;
                     }
@@ -432,7 +433,7 @@ main {
                     @media #{$large_mobile} {
                         font-size: $font_14;
                     }
-    
+
                     @media #{$small_mobile} {
                         font-size: $font_12;
                     }
@@ -441,12 +442,13 @@ main {
             }
         }
 
-        
 
-        .latest-items-active{
+
+        .latest-items-active {
             direction: ltr;
             margin-bottom: 100px;
-            button{
+
+            button {
                 &.slick-arrow {
                     position: absolute;
                     border: 0;
@@ -457,45 +459,58 @@ main {
                     transform: translateY(-50%);
                     left: auto;
                     background: none;
-                    i{
-                        font-size: 30px;
+
+                    i {
+                        font-size: $font-30;
                         color: #2045704d;
                         @include transition(.2s);
                     }
                 }
+
                 &.slick-prev {
                     left: -40px;
-                    @media #{$laptop}{
-                    left: -20px;
+
+                    @media #{$laptop} {
+                        left: -20px;
                     }
-                    @media #{$large1}{
-                    left: -30px;
+
+                    @media #{$large1} {
+                        left: -30px;
                     }
-                    @media #{$lg}{
-                    left: -27px;
+
+                    @media #{$lg} {
+                        left: -27px;
                     }
-                    @media #{$md}{
-                    left: -25px;
+
+                    @media #{$md} {
+                        left: -25px;
                     }
-                    @media #{$sm}{
-                    left: -10px;
+
+                    @media #{$sm} {
+                        left: -10px;
                     }
                 }
+
                 &.slick-next {
                     right: -40px;
-                    @media #{$laptop}{
+
+                    @media #{$laptop} {
                         right: -20px;
                     }
-                    @media #{$large1}{
+
+                    @media #{$large1} {
                         right: -30px;
                     }
-                    @media #{$lg}{
+
+                    @media #{$lg} {
                         right: -27px;
                     }
-                    @media #{$md}{
+
+                    @media #{$md} {
                         right: -20px;
                     }
-                    @media #{$sm}{
+
+                    @media #{$sm} {
                         right: -10px;
                     }
                 }
@@ -513,11 +528,11 @@ main {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             gap: 20px;
 
-            @media #{$large_mobile}{
+            @media #{$large_mobile} {
                 grid-template-columns: 1fr 1fr 1fr;
             }
 
-            @media #{$small_mobile}{
+            @media #{$small_mobile} {
                 grid-template-columns: 1fr 1fr;
             }
 
@@ -526,10 +541,10 @@ main {
                 border-radius: 15px;
                 text-align: center;
                 height: 200px;
-    
+
                 .head {
                     padding: 40px 20px;
-    
+
                     i.rotation {
                         transform: rotate(347deg);
                         -webkit-transform: rotate(347deg);
@@ -537,15 +552,15 @@ main {
                         -ms-transform: rotate(347deg);
                         -o-transform: rotate(347deg);
                     }
-    
+
                     h3 {
-                        font-weight: bold;
+                        font-weight: $font_weight_bold;
                         margin-bottom: 20px;
                         text-transform: uppercase;
                     }
-    
+
                     span {
-                        font-weight: bold;
+                        font-weight: $font_weight_bold;
                         display: flex;
                         justify-content: center;
                         align-items: center;
