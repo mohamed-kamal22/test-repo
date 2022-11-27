@@ -63,22 +63,6 @@ $(document).ready(function () {
             },
         ]
     });
-
-
-    $(window).on('scroll', function() {
-		var wScroll = $(this).scrollTop();
-
-		// Back To Top Appear
-		wScroll > 700 ? $('#back-top').fadeIn() : $('#back-top').fadeOut();
-	});
-
-    // Scroll Up
-    $('#back-top a').on("click", function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 1100);
-        return false;
-    });
 });
 
 
