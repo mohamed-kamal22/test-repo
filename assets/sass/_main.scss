@@ -508,35 +508,49 @@ main {
     }
 
     .pricing {
-        .plan {
-            background: #F0F0F0;
-            border-radius: 15px;
-            text-align: center;
-            height: 200px;
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 20px;
 
-            .head {
-                padding: 40px 20px;
+            @media #{$large_mobile}{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
 
-                i.rotation {
-                    transform: rotate(347deg);
-                    -webkit-transform: rotate(347deg);
-                    -moz-transform: rotate(347deg);
-                    -ms-transform: rotate(347deg);
-                    -o-transform: rotate(347deg);
-                }
+            @media #{$small_mobile}{
+                grid-template-columns: 1fr 1fr;
+            }
 
-                h3 {
-                    font-weight: bold;
-                    margin-bottom: 20px;
-                    text-transform: uppercase;
-                }
-
-                span {
-                    font-weight: bold;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 30px;
+            .plan {
+                background: #F0F0F0;
+                border-radius: 15px;
+                text-align: center;
+                height: 200px;
+    
+                .head {
+                    padding: 40px 20px;
+    
+                    i.rotation {
+                        transform: rotate(347deg);
+                        -webkit-transform: rotate(347deg);
+                        -moz-transform: rotate(347deg);
+                        -ms-transform: rotate(347deg);
+                        -o-transform: rotate(347deg);
+                    }
+    
+                    h3 {
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                        text-transform: uppercase;
+                    }
+    
+                    span {
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 30px;
+                    }
                 }
             }
         }

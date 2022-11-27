@@ -561,29 +561,39 @@ main {
           right: -10px; } }
     main .initiatives .latest-items-active h3 {
       text-align: center; }
-  main .pricing .plan {
-    background: #F0F0F0;
-    border-radius: 15px;
-    text-align: center;
-    height: 200px; }
-    main .pricing .plan .head {
-      padding: 40px 20px; }
-      main .pricing .plan .head i.rotation {
-        transform: rotate(347deg);
-        -webkit-transform: rotate(347deg);
-        -moz-transform: rotate(347deg);
-        -ms-transform: rotate(347deg);
-        -o-transform: rotate(347deg); }
-      main .pricing .plan .head h3 {
-        font-weight: bold;
-        margin-bottom: 20px;
-        text-transform: uppercase; }
-      main .pricing .plan .head span {
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px; }
+  main .pricing .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px; }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      main .pricing .content {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media (max-width: 576px) {
+      main .pricing .content {
+        grid-template-columns: 1fr 1fr; } }
+    main .pricing .content .plan {
+      background: #F0F0F0;
+      border-radius: 15px;
+      text-align: center;
+      height: 200px; }
+      main .pricing .content .plan .head {
+        padding: 40px 20px; }
+        main .pricing .content .plan .head i.rotation {
+          transform: rotate(347deg);
+          -webkit-transform: rotate(347deg);
+          -moz-transform: rotate(347deg);
+          -ms-transform: rotate(347deg);
+          -o-transform: rotate(347deg); }
+        main .pricing .content .plan .head h3 {
+          font-weight: bold;
+          margin-bottom: 20px;
+          text-transform: uppercase; }
+        main .pricing .content .plan .head span {
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px; }
 
 footer {
   padding-top: 60px;
