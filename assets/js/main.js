@@ -63,22 +63,38 @@ $(document).ready(function () {
             },
         ]
     });
+
+
+    $(window).on('scroll', function() {
+		var wScroll = $(this).scrollTop();
+
+		// Back To Top Appear
+		wScroll > 700 ? $('#back-top').fadeIn() : $('#back-top').fadeOut();
+	});
+
+    // Scroll Up
+    $('#back-top a').on("click", function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1100);
+        return false;
+    });
 });
 
 
 
 var toTop = 0;
-function autoPlay(){
-  timer = setTimeout(function(){
-    var row = document.getElementById('row');
-    toTop = toTop - 350;
-    if (toTop < -350){
-      toTop = 0;
-      clearTimeout(timer);
-      row.onmouseover = clearTimeout(timer);
-      }
-  row.style.top = toTop +'px';
-  autoPlay();
-  }, 3000);
+function autoPlay() {
+    timer = setTimeout(function () {
+        var row = document.getElementById('row');
+        toTop = toTop - 350;
+        if (toTop < -350) {
+            toTop = 0;
+            clearTimeout(timer);
+            row.onmouseover = clearTimeout(timer);
+        }
+        row.style.top = toTop + 'px';
+        autoPlay();
+    }, 3000);
 }
 autoPlay();

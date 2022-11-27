@@ -1,0 +1,75 @@
+#back-top {
+	display: none;
+    background: #d5a41994;
+	height: 40px;
+	width: 40px;
+	right: 31px;
+	bottom: 18px;
+	position: fixed;
+
+	@media #{$xs} {
+		right: 16px;
+	}
+
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 40px;
+	border: 2px solid transparent;
+	box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+
+	a i {
+		display: block;
+		line-height: 50px;
+	}
+
+}
+
+
+#back-top {
+	.wrapper {
+		position: relative;
+
+		.arrows-container {
+			position: absolute;
+			text-align: center;
+			bottom: -3px;
+			margin: 0 auto;
+			display: block;
+			right: -7px;
+
+			.arrow {
+				padding: 7px;
+				box-shadow: 2px -2px #fff inset;
+				transform: rotate(130deg);
+				opacity: 0;
+				position: absolute;
+			}
+
+			.arrow-one {
+				animation: arrowMovement 3s ease-in-out infinite;
+			}
+
+			.arrow-two {
+				animation: arrowMovement 3s 1s ease-in-out infinite;
+			}
+
+			@keyframes arrowMovement {
+				0% {
+					top: 15px;
+					opacity: 0;
+				}
+
+				70% {
+					opacity: 1;
+				}
+
+				100% {
+					top: 0px;
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
