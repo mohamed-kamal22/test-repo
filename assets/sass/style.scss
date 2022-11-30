@@ -1,8 +1,15 @@
+// Default
 @import 'variables';
 @import 'mixins';
+
+
+// Homepage
 @import 'header';
 @import 'main';
 @import 'footer';
+
+// inner Page
+@import 'about.scss';
 
 @font-face {
     font-family: ArabHelvetica;
