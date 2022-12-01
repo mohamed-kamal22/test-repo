@@ -55,6 +55,19 @@ $(document).ready(function () {
             },
         ]
     });
+
+    // About -- about-items
+
+    $(".top ul li").click(function (event) {
+        event.preventDefault();
+        $(".top .panes").show();
+        var i = $(this).index(i);
+        $(".top ul li").removeClass("active");
+        $(".bottom ul li").removeClass("active");
+        $(this).addClass("active");
+        $(".top .panes .pane").hide();
+        $(".top .panes .pane").eq(i).show();
+    });
 });
 
 
