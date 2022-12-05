@@ -229,17 +229,17 @@ header {
                         >a {
                             span {
                                 position: relative;
-                                padding-right: 30px;
+                                // padding-right: 30px;
         
-                                &:before {
-                                    position: absolute;
-                                    content: "\e313";
-                                    font-size: $font-16;
-                                    top: 50%;
-                                    right: 10px;
-                                    transform: translateY(-50%);
-                                    font-family: 'icomoon';
-                                }
+                                // &:before {
+                                //     position: absolute;
+                                //     content: "\e313";
+                                //     font-size: $font-16;
+                                //     top: 50%;
+                                //     right: 10px;
+                                //     transform: translateY(-50%);
+                                //     font-family: 'icomoon';
+                                // }
                             }
                         }
         

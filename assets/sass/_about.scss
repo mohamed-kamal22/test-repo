@@ -1,26 +1,60 @@
 .about {
     background: #F5F5F5;
+
+    @media #{$mobile_device} {
+        margin-bottom: 20px;
+    }
+
     .about-header {
         padding-top: 40px;
+
         .about-header_top {
             display: flex;
             align-items: center;
             margin-bottom: 80px;
+
+            @media #{$mobile_device} {
+                margin-bottom: 40px;
+            }
+
             div {
+                &:first-child {
+                    svg {
+                        height: 55px;
+                    }
+                }
+
                 &:last-child {
                     display: flex;
                     flex-direction: column;
                     margin: 0 10px;
+
                     span {
                         &:first-child {
                             font-size: $font_26;
                             color: #1268B3;
+
+                            @media #{$large_mobile} {
+                                font-size: $font_22;
+                            }
+
+                            @media #{$small_mobile} {
+                                font-size: $font-20;
+                            }
                         }
 
                         &:last-child {
                             font-size: 66px;
                             color: #1268B3;
                             font-weight: bold;
+
+                            @media #{$large_mobile} {
+                                font-size: 50px;
+                            }
+
+                            @media #{$small_mobile} {
+                                font-size: 40px;
+                            }
                         }
                     }
                 }
@@ -30,20 +64,35 @@
 }
 
 .about-items {
+
+    @media #{$mobile_device} {
+        margin-top: 0;
+    }
+
     margin-top: -45px;
-    .top {
+    .large-tab {
+
+        @media #{$mobile_device} {
+            display: none;
+        }
+
         ul.tabs {
             height: 50px;
             display: flex;
             align-items: center;
             padding: 0;
             list-style: none;
+
             li {
                 color: #404040;
                 margin-left: 70px;
                 cursor: pointer;
                 position: relative;
                 padding-bottom: 5px;
+
+                @media #{$tab_device} {
+                    margin-left: 29px;
+                }
 
                 &.active {
                     &::before {
@@ -60,75 +109,131 @@
             }
 
             .active {
-                color: #1268B3!important;
+                color: #1268B3 !important;
             }
         }
 
         .panes {
             .pane {
                 display: none;
-                padding: 20px 0;
+                padding: 0;
+                color: #404040;
+                line-height: 1.8;
 
                 &:first-child {
-                    display: block; 
+                    display: block;
                 }
             }
 
-            .initiatives ,
+            .initiatives,
             .central-departments {
-                .card {
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                    transition: background-color .2s ease-in .1ms;
-                    cursor: pointer;
-                    .card-body {
-                        div {
-                            &:first-child {
-                                width: 50px;
-                                height: 50px;
-                                border-radius: 50%;
-                                display: flex;
-                                background: #1268B3;
-                                align-items: center;
-                                justify-content: center;
-                                margin-bottom: 20px;
+                .col-md-4:first-child {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
 
-                                i {
-                                    color: #fff;
-                                    font-size: $font_26;
-                                }
-                            }
+    .mobile-tab {
+        display: none;
 
-                            &:last-child {
-                                font-size: 20px;
-                                color: #000000;
-                            }
-                        }
-                    }
+        @media #{$mobile_device} {
+            display: block;
+        }
 
-                    &:hover {
-                        background-color: #1268B3;
-    
-                        .card-body {
-                            div {
-                                &:first-child {
-                                    background: #ffffff;
-    
-                                    i {
-                                        color: #1268B3;
-                                    }
-                                }
-    
-                                &:last-child {
-                                    color: #fff;
-                                }
-                            }
-                        }
+        .mobile-tab-block {
+            width: 100%;
+
+            .title {
+                color: #404040;
+                padding: 12px 20px 12px 70px;
+                display: block;
+                text-transform: uppercase;
+                font-size: $font-16;
+                border: 1px solid #e3e1e1;
+                border-radius: 2px;
+                cursor: pointer;
+                position: relative;
+                z-index: 99;
+                background: #d4d4d4;
+            }
+
+            .mobile-tab-contant {
+                margin-top: 0;
+                padding: 10px 20px;
+                border: 1px solid #eeeeee;
+
+                span.title-m {
+                    font-size: $font_26;
+                    color: #404040;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+            
+                p {
+                    color: #404040;
+                    font-size: $font_14;
+                    line-height: 24px;
+                }
+            }
+
+            &.active {
+                .title {
+                    color: #35c2db;
+                    border: 1px solid #3c3b3b;
+                    background: #343433;
+                }
+            }
+        }
+    }
+
+    .card {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transition: background-color .2s ease-in .1ms;
+        cursor: pointer;
+
+        .card-body {
+            div {
+                &:first-child {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    background: #1268B3;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 20px;
+
+                    i {
+                        color: #fff;
+                        font-size: $font_26;
                     }
                 }
 
-                .col-md-4:first-child {
-                    margin-bottom: 50px;
+                &:last-child {
+                    font-size: 20px;
+                    color: #000000;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: #1268B3;
+
+            .card-body {
+                div {
+                    &:first-child {
+                        background: #ffffff;
+
+                        i {
+                            color: #1268B3;
+                        }
+                    }
+
+                    &:last-child {
+                        color: #fff;
+                    }
                 }
             }
         }
