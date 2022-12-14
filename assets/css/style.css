@@ -1015,6 +1015,86 @@ footer {
       .about-items .card:hover .card-body div:last-child {
         color: #fff; }
 
+.contact-us {
+  padding-top: 50px; }
+  .contact-us .contactUs-title {
+    margin-bottom: 30px; }
+    .contact-us .contactUs-title span {
+      font-size: 24px;
+      color: #303741; }
+  .contact-us .contact--form {
+    background: #F8F8F8;
+    border-radius: 8px;
+    padding: 32px; }
+    .contact-us .contact--form form label {
+      color: #404040;
+      display: block; }
+    .contact-us .contact--form form input {
+      width: 100%;
+      margin-bottom: 40px;
+      height: 30px; }
+    .contact-us .contact--form form textarea {
+      width: 100%; }
+    .contact-us .contact--form .btnSend {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px; }
+      .contact-us .contact--form .btnSend .button {
+        background: radial-gradient(57.82% 165.5% at 33.42% 48.55%, #1268B3 0%, #1268B3 100%);
+        background: #25abd9;
+        border-radius: 4px;
+        border: 0;
+        cursor: pointer;
+        width: 90%;
+        height: 32px;
+        color: #fff;
+        box-shadow: 0 6px 0 #2090b7, 0 5px 15px -4px #000;
+        font-size: 20px;
+        padding-bottom: 6px;
+        transition: box-shadow .2s ease-in-out , margin-top .2s ease-in-out , opacity .2s ease-in-out; }
+        .contact-us .contact--form .btnSend .button:hover,
+        .contact-us .contact--form .btnSend .button :focus {
+          opacity: .9;
+          outline: 0; }
+        .contact-us .contact--form .btnSend .button:active {
+          box-shadow: 0;
+          margin-top: 6px; }
+  .contact-us .map img {
+    height: 480px; }
+  .contact-us .details-contact .title {
+    color: #303741;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .contact-us .details-contact .content {
+    overflow: hidden; }
+    .contact-us .details-contact .content .innerDetails {
+      float: right;
+      width: 50%; }
+      .contact-us .details-contact .content .innerDetails div {
+        display: flex;
+        align-items: baseline; }
+        .contact-us .details-contact .content .innerDetails div:first-child {
+          margin-bottom: 12px; }
+        .contact-us .details-contact .content .innerDetails div i {
+          font-size: 20px;
+          color: #1268B3;
+          width: 40px;
+          height: 40px;
+          background: rgba(18, 104, 179, 0.05);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        .contact-us .details-contact .content .innerDetails div span {
+          color: #000000;
+          font-size: 20px;
+          margin: 0 12px; }
+          .contact-us .details-contact .content .innerDetails div span.name-ministry {
+            color: #1268B3; }
+  .contact-us .contactUs--section {
+    margin-top: 30px; }
+
 @font-face {
   font-family: ArabHelvetica;
   src: url(../fonts/ArabHelvetica.ttf); }
