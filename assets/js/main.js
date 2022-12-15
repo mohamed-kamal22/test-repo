@@ -183,3 +183,16 @@ $(function () {
     siteMenuClone();
 
 });
+
+
+
+$("ul li").click(function (event) {
+	event.preventDefault();
+	$(".panes").show();
+	var i = $(this).index(i);
+	$("ul li").removeClass("active");
+	$(this).addClass("active");
+	$(".panes .pane").hide();
+	$(".panes .pane").eq(i).show();
+});
+

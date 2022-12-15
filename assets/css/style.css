@@ -1059,8 +1059,10 @@ footer {
         .contact-us .contact--form .btnSend .button:active {
           box-shadow: 0;
           margin-top: 6px; }
-  .contact-us .map img {
-    height: 480px; }
+  .contact-us .map {
+    margin-bottom: 40px; }
+    .contact-us .map img {
+      height: 480px; }
   .contact-us .details-contact .title {
     color: #303741;
     font-size: 24px;
@@ -1093,7 +1095,30 @@ footer {
           .contact-us .details-contact .content .innerDetails div span.name-ministry {
             color: #1268B3; }
   .contact-us .contactUs--section {
-    margin-top: 30px; }
+    margin: 40px 0; }
+    .contact-us .contactUs--section .main-section ul.tabs {
+      padding: 0;
+      list-style: none; }
+      .contact-us .contactUs--section .main-section ul.tabs li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        background: rgba(18, 104, 179, 0.05);
+        cursor: pointer;
+        color: #404040;
+        font-weight: bold; }
+        .contact-us .contactUs--section .main-section ul.tabs li.active {
+          color: #1268B3 !important; }
+    .contact-us .contactUs--section .sub-section .panes .pane {
+      display: none;
+      padding: 0;
+      color: #404040;
+      line-height: 1.8; }
+      .contact-us .contactUs--section .sub-section .panes .pane:first-child {
+        display: block; }
 
 @font-face {
   font-family: ArabHelvetica;
