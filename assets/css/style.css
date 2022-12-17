@@ -1026,6 +1026,9 @@ footer {
     background: #F8F8F8;
     border-radius: 8px;
     padding: 32px; }
+    @media (max-width: 575px) {
+      .contact-us .contact--form {
+        margin-bottom: 15px; } }
     .contact-us .contact--form form label {
       color: #404040;
       display: block; }
@@ -1062,7 +1065,7 @@ footer {
   .contact-us .map {
     margin-bottom: 40px; }
     .contact-us .map img {
-      height: 480px; }
+      width: 100%; }
   .contact-us .details-contact .title {
     color: #303741;
     font-size: 24px;
@@ -1073,6 +1076,10 @@ footer {
     .contact-us .details-contact .content .innerDetails {
       float: right;
       width: 50%; }
+      @media (max-width: 420px) {
+        .contact-us .details-contact .content .innerDetails {
+          display: block;
+          width: 100%; } }
       .contact-us .details-contact .content .innerDetails div {
         display: flex;
         align-items: baseline; }
@@ -1096,10 +1103,10 @@ footer {
             color: #1268B3; }
   .contact-us .contactUs--section {
     margin: 40px 0; }
-    .contact-us .contactUs--section .main-section ul.tabs {
+    .contact-us .contactUs--section .main-section ul.main-section__tabs {
       padding: 0;
       list-style: none; }
-      .contact-us .contactUs--section .main-section ul.tabs li {
+      .contact-us .contactUs--section .main-section ul.main-section__tabs li {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1110,15 +1117,47 @@ footer {
         cursor: pointer;
         color: #404040;
         font-weight: bold; }
-        .contact-us .contactUs--section .main-section ul.tabs li.active {
+        .contact-us .contactUs--section .main-section ul.main-section__tabs li.active {
           color: #1268B3 !important; }
-    .contact-us .contactUs--section .sub-section .panes .pane {
+    .contact-us .contactUs--section .sub-section .sub-section__panes .pane {
       display: none;
       padding: 0;
       color: #404040;
       line-height: 1.8; }
-      .contact-us .contactUs--section .sub-section .panes .pane:first-child {
+      .contact-us .contactUs--section .sub-section .sub-section__panes .pane:first-child {
         display: block; }
+      .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card {
+        margin-bottom: 25px;
+        border: 0; }
+        .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header {
+          border: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: rgba(18, 104, 179, 0.05); }
+          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header .card-header-title a {
+            color: #1268B3;
+            font-weight: bold;
+            font-size: 18px; }
+          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header i {
+            font-size: 28px;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #1268B3;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+        .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-body .content div {
+          margin-bottom: 5px; }
+          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-body .content div span {
+            font-size: 18px;
+            color: #000; }
+          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-body .content div i {
+            width: 7%;
+            color: #A6A9AB;
+            font-size: 18px; }
 
 @font-face {
   font-family: ArabHelvetica;

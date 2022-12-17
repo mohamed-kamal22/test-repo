@@ -80,6 +80,19 @@ $(document).ready(function () {
             $('html, body').animate({ scrollTop: targetOffset }, 1000);
         }
     });
+
+
+    // Contact-us 
+
+    $(".main-section__tabs li").click(function (event) {
+        event.preventDefault();
+        $(".sub-section__panes").show();
+        var i = $(this).index(i);
+        $(".main-section__tabs li").removeClass("active");
+        $(this).addClass("active");
+        $(".sub-section__panes .pane").hide();
+        $(".sub-section__panes .pane").eq(i).show();
+    });
 });
 
 
@@ -183,16 +196,3 @@ $(function () {
     siteMenuClone();
 
 });
-
-
-
-$("ul li").click(function (event) {
-	event.preventDefault();
-	$(".panes").show();
-	var i = $(this).index(i);
-	$("ul li").removeClass("active");
-	$(this).addClass("active");
-	$(".panes .pane").hide();
-	$(".panes .pane").eq(i).show();
-});
-
