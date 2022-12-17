@@ -950,6 +950,42 @@ footer {
   .about-items .large-tab .panes .initiatives .col-md-4:first-child,
   .about-items .large-tab .panes .central-departments .col-md-4:first-child {
     margin-bottom: 50px; }
+  .about-items .large-tab .panes .offices .accordion .accordion--content {
+    margin-bottom: 25px;
+    border: 0; }
+    .about-items .large-tab .panes .offices .accordion .accordion--content .card-header {
+      border: 0;
+      background: rgba(18, 104, 179, 0.05); }
+      .about-items .large-tab .panes .offices .accordion .accordion--content .card-header .card-header-title a {
+        color: #1268B3;
+        font-weight: bold;
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+      .about-items .large-tab .panes .offices .accordion .accordion--content .card-header .card-header-title i {
+        font-size: 28px;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #1268B3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in-out; }
+      .about-items .large-tab .panes .offices .accordion .accordion--content .card-header a[aria-expanded="true"] i {
+        transform: rotate(180deg); }
+  .about-items .large-tab .panes .offices .accordion .collapse .card-body .content-offices div {
+    margin-bottom: 5px; }
+    .about-items .large-tab .panes .offices .accordion .collapse .card-body .content-offices div span {
+      font-size: 18px;
+      color: #000; }
+    .about-items .large-tab .panes .offices .accordion .collapse .card-body .content-offices div i {
+      width: 9%;
+      color: #A6A9AB;
+      font-size: 18px; }
   .about-items .mobile-tab {
     display: none; }
     @media (max-width: 767px) {
@@ -1054,7 +1090,7 @@ footer {
         box-shadow: 0 6px 0 #2090b7, 0 5px 15px -4px #000;
         font-size: 20px;
         padding-bottom: 6px;
-        transition: box-shadow .2s ease-in-out , margin-top .2s ease-in-out , opacity .2s ease-in-out; }
+        transition: box-shadow .2s ease-in-out, margin-top .2s ease-in-out, opacity .2s ease-in-out; }
         .contact-us .contact--form .btnSend .button:hover,
         .contact-us .contact--form .btnSend .button :focus {
           opacity: .9;
@@ -1131,24 +1167,28 @@ footer {
         border: 0; }
         .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header {
           border: 0;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
           background: rgba(18, 104, 179, 0.05); }
           .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header .card-header-title a {
             color: #1268B3;
             font-weight: bold;
-            font-size: 18px; }
-          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header i {
-            font-size: 28px;
-            color: #fff;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: #1268B3;
+            font-size: 18px;
+            width: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center; }
+            justify-content: space-between;
+            align-items: center; }
+            .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header .card-header-title a i {
+              font-size: 28px;
+              color: #fff;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              background: #1268B3;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all .3s ease-in-out; }
+          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header .card-header-title a[aria-expanded="true"] i {
+            transform: rotate(180deg); }
         .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-body .content div {
           margin-bottom: 5px; }
           .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-body .content div span {

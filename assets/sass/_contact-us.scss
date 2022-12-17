@@ -1,7 +1,9 @@
 .contact-us {
     padding-top: 50px;
+
     .contactUs-title {
         margin-bottom: 30px;
+
         span {
             font-size: $font_24;
             color: #303741;
@@ -38,6 +40,7 @@
             display: flex;
             justify-content: center;
             margin-top: 15px;
+
             .button {
                 background: radial-gradient(57.82% 165.5% at 33.42% 48.55%, #1268B3 0%, #1268B3 100%);
                 background: #25abd9;
@@ -50,9 +53,10 @@
                 box-shadow: 0 6px 0 #2090b7, 0 5px 15px -4px #000;
                 font-size: 20px;
                 padding-bottom: 6px;
-                transition: box-shadow .2s ease-in-out , margin-top .2s ease-in-out , opacity .2s ease-in-out;
-                &:hover ,
-                 :focus {
+                transition: box-shadow .2s ease-in-out, margin-top .2s ease-in-out, opacity .2s ease-in-out;
+
+                &:hover,
+                :focus {
                     opacity: .9;
                     outline: 0;
                 }
@@ -64,9 +68,10 @@
             }
         }
     }
-    
+
     .map {
         margin-bottom: 40px;
+
         img {
             width: 100%;
         }
@@ -82,6 +87,7 @@
 
         .content {
             overflow: hidden;
+
             .innerDetails {
                 float: right;
                 width: 50%;
@@ -94,6 +100,7 @@
                 div {
                     display: flex;
                     align-items: baseline;
+
                     &:first-child {
                         margin-bottom: 12px;
                     }
@@ -127,6 +134,7 @@
 
     .contactUs--section {
         margin: 40px 0;
+
         .main-section {
             ul.main-section__tabs {
                 padding: 0;
@@ -143,6 +151,7 @@
                     cursor: pointer;
                     color: #404040;
                     font-weight: $font_weight_bold;
+
                     &.active {
                         color: #1268B3 !important;
                     }
@@ -157,6 +166,7 @@
                     padding: 0;
                     color: #404040;
                     line-height: 1.8;
+
                     &:first-child {
                         display: block;
                     }
@@ -165,11 +175,9 @@
                         .card {
                             margin-bottom: 25px;
                             border: 0;
+
                             .card-header {
                                 border: 0;
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
                                 background: rgba(18, 104, 179, 0.05);
 
                                 .card-header-title {
@@ -177,19 +185,30 @@
                                         color: #1268B3;
                                         font-weight: $font_weight_bold;
                                         font-size: $font_18;
-                                    }
-                                }
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
 
-                                i {
-                                    font-size: $font_28;
-                                    color: #fff;
-                                    width: 30px;
-                                    height: 30px;
-                                    border-radius: 50%;
-                                    background: #1268B3;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
+                                        i {
+                                            font-size: $font_28;
+                                            color: #fff;
+                                            width: 30px;
+                                            height: 30px;
+                                            border-radius: 50%;
+                                            background: #1268B3;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            transition: all .3s ease-in-out;
+                                        }
+                                    }
+
+                                    a[aria-expanded="true"] {
+                                        i {
+                                            transform: rotate(180deg);
+                                        }
+                                    }
                                 }
                             }
 
@@ -197,10 +216,12 @@
                                 .content {
                                     div {
                                         margin-bottom: 5px;
+
                                         span {
                                             font-size: $font_18;
                                             color: #000;
                                         }
+
                                         i {
                                             width: 7%;
                                             color: #A6A9AB;
@@ -216,28 +237,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-// .card-header-title > a {
-//     display: block;
-//     position: relative;
-// }
-// .card-header-title > a:hover {
-//     cursor: pointer;
-// }
-// .card-header-title > a:after {
-//     content: "\f106"; /* fa-chevron-down */
-//     font-family: "fontawesome";
-//     font-weight: 900;
-//     position: absolute;
-//     right: 0;
-// }
-// .card-header-title > a[aria-expanded="true"]:after {
-//     content: "\f077"; /* fa-chevron-up */
-// }
