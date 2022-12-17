@@ -170,68 +170,6 @@
                     &:first-child {
                         display: block;
                     }
-
-                    .accordion {
-                        .card {
-                            margin-bottom: 25px;
-                            border: 0;
-
-                            .card-header {
-                                border: 0;
-                                background: rgba(18, 104, 179, 0.05);
-
-                                .card-header-title {
-                                    a {
-                                        color: #1268B3;
-                                        font-weight: $font_weight_bold;
-                                        font-size: $font_18;
-                                        width: 100%;
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: center;
-
-                                        i {
-                                            font-size: $font_28;
-                                            color: #fff;
-                                            width: 30px;
-                                            height: 30px;
-                                            border-radius: 50%;
-                                            background: #1268B3;
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
-                                            transition: all .3s ease-in-out;
-                                        }
-                                    }
-
-                                    a[aria-expanded="true"] {
-                                        i {
-                                            transform: rotate(180deg);
-                                        }
-                                    }
-                                }
-                            }
-
-                            .card-body {
-                                .content {
-                                    div {
-                                        margin-bottom: 5px;
-
-                                        span {
-                                            font-size: $font_18;
-                                            color: #000;
-                                        }
-
-                                        i {
-                                            width: 7%;
-                                            color: #A6A9AB;
-                                            font-size: $font_18;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }

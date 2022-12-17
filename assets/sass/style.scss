@@ -1,6 +1,7 @@
 // Default
 @import 'variables';
 @import 'mixins';
+@import 'global';
 
 
 // Homepage
@@ -11,6 +12,9 @@
 // inner Page
 @import 'about';
 @import 'contact-us';
+
+// 
+@import 'initiatives-1';
 
 @font-face {
     font-family: ArabHelvetica;

@@ -1,0 +1,64 @@
+.initiatives-inner {
+    .initiatives-inner_title {
+        background: #ECEDEF;
+        height: 450px;
+
+        .title {
+            margin-top: 50px;
+
+            span {
+                color: #1268B3;
+                font-weight: $font_weight_bold;
+                font-size: 46px;
+            }
+        }
+    }
+
+    .initiatives-inner_content {
+        margin-top: -20%;
+
+        .img-content {
+            border-radius: 22px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .dis-content {
+            margin-top: 70px;
+            margin-bottom: 40px;
+            font-size: $font-20;
+            color: #0000008f;
+            font-weight: $font_weight_bold;
+        }
+
+        .details-initiatives {
+            .card-header {
+                border-radius: 15px;
+            }
+
+            .objectives {
+                .card-body {
+                    p {
+                        margin-bottom: 30px;
+                        color: #0000008f;
+                        font-weight: $font_weight_bold;
+                    }
+
+                    ul {
+                        li {
+                            color: #0000008f;
+                            font-weight: $font_weight_bold;
+                            line-height: 30px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+    }
+}

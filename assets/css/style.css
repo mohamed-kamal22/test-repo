@@ -1,5 +1,42 @@
 /*--------------- ---- Responsive --------------------------*/
 /*--------------- ---- Fonts --------------------------*/
+.accordion .card {
+  margin-bottom: 25px;
+  border: 0; }
+  .accordion .card .card-header {
+    border: 0;
+    background: rgba(18, 104, 179, 0.05); }
+    .accordion .card .card-header .card-header-title a {
+      color: #1268B3;
+      font-weight: bold;
+      font-size: 18px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .accordion .card .card-header .card-header-title a i {
+        font-size: 28px;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #1268B3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in-out; }
+    .accordion .card .card-header .card-header-title a[aria-expanded="true"] i {
+      transform: rotate(180deg); }
+  .accordion .card .card-body .content div {
+    margin-bottom: 5px; }
+    .accordion .card .card-body .content div span {
+      font-size: 18px;
+      color: #000; }
+    .accordion .card .card-body .content div i {
+      width: 7%;
+      color: #A6A9AB;
+      font-size: 18px; }
+
 header .header-top .header-sticky {
   display: flex;
   align-items: center;
@@ -1162,42 +1199,39 @@ footer {
       line-height: 1.8; }
       .contact-us .contactUs--section .sub-section .sub-section__panes .pane:first-child {
         display: block; }
-      .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card {
-        margin-bottom: 25px;
-        border: 0; }
-        .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header {
-          border: 0;
-          background: rgba(18, 104, 179, 0.05); }
-          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header .card-header-title a {
-            color: #1268B3;
-            font-weight: bold;
-            font-size: 18px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center; }
-            .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header .card-header-title a i {
-              font-size: 28px;
-              color: #fff;
-              width: 30px;
-              height: 30px;
-              border-radius: 50%;
-              background: #1268B3;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              transition: all .3s ease-in-out; }
-          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-header .card-header-title a[aria-expanded="true"] i {
-            transform: rotate(180deg); }
-        .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-body .content div {
-          margin-bottom: 5px; }
-          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-body .content div span {
-            font-size: 18px;
-            color: #000; }
-          .contact-us .contactUs--section .sub-section .sub-section__panes .pane .accordion .card .card-body .content div i {
-            width: 7%;
-            color: #A6A9AB;
-            font-size: 18px; }
+
+.initiatives-inner .initiatives-inner_title {
+  background: #ECEDEF;
+  height: 450px; }
+  .initiatives-inner .initiatives-inner_title .title {
+    margin-top: 50px; }
+    .initiatives-inner .initiatives-inner_title .title span {
+      color: #1268B3;
+      font-weight: bold;
+      font-size: 46px; }
+.initiatives-inner .initiatives-inner_content {
+  margin-top: -20%; }
+  .initiatives-inner .initiatives-inner_content .img-content {
+    border-radius: 22px; }
+    .initiatives-inner .initiatives-inner_content .img-content img {
+      width: 100%; }
+  .initiatives-inner .initiatives-inner_content .dis-content {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #0000008f;
+    font-weight: bold; }
+  .initiatives-inner .initiatives-inner_content .details-initiatives .card-header {
+    border-radius: 15px; }
+  .initiatives-inner .initiatives-inner_content .details-initiatives .objectives .card-body p {
+    margin-bottom: 30px;
+    color: #0000008f;
+    font-weight: bold; }
+  .initiatives-inner .initiatives-inner_content .details-initiatives .objectives .card-body ul li {
+    color: #0000008f;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 10px; }
 
 @font-face {
   font-family: ArabHelvetica;
