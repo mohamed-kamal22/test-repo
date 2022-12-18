@@ -93,6 +93,18 @@ $(document).ready(function () {
         $(".sub-section__panes .pane").hide();
         $(".sub-section__panes .pane").eq(i).show();
     });
+
+    // .services--section
+    
+    $(".mainServices-section__tabs div").click(function (event) {
+        event.preventDefault();
+        $(".sub-section__line").show();
+        var i = $(this).index(i);
+        $(".mainServices-section__tabs div").removeClass("active");
+        $(this).addClass("active");
+        $(".sub-section__line .bodyLine").hide();
+        $(".sub-section__line .bodyLine").eq(i).show();
+    });
 });
 
 
