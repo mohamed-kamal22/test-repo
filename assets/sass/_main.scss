@@ -1,6 +1,115 @@
 main {
     margin-bottom: 60px;
 
+    .header-slider {
+        height: 350px;
+        .wrap {
+            position: relative;
+            height: 350px;
+    
+            .slider {
+                height: 350px;
+                overflow: hidden;
+    
+                .slider__row {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+    
+                    .row__item {
+                        display: flex;
+                        align-items: center;
+    
+                        @media #{$large_mobile} {
+                            align-items: unset;
+                        }
+    
+                        @media #{$small_mobile} {
+                            align-items: unset;
+                        }
+    
+                        &:first-child {
+                            background-image: url('../../img/test.jpg');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            height: 350px;
+                        }
+    
+                        &:nth-child(2) {
+                            background-image: url('../../img/test1.jpg');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            height: 350px;
+                        }
+    
+                        .header-slider-content {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: baseline;
+    
+                            p {
+                                margin-bottom: 20px;
+    
+                                &:first-child {
+                                    font-size: $font_32;
+                                    color: #fff;
+    
+                                    @media #{$large_mobile} {
+                                        font-size: $font_28;
+                                        margin-bottom: 10px;
+                                    }
+    
+                                    @media #{$small_mobile} {
+                                        font-size: $font_26;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+    
+                                &:nth-child(2) {
+                                    font-size: $font_32;
+                                    color: white;
+                                    font-weight: $font_weight_bold;
+                                    width: 40%;
+    
+                                    @media #{$large_mobile} {
+                                        font-size: $font_28;
+                                        width: 75%;
+                                    }
+    
+                                    @media #{$small_mobile} {
+                                        font-size: $font_26;
+                                        width: 75%;
+                                    }
+                                }
+                            }
+    
+                            a {
+                                background: #1268B3;
+                                border-radius: 15px;
+                                text-decoration: none;
+                                cursor: pointer;
+                                height: 40px;
+                                width: 150px;
+                                line-height: 40px;
+                                display: flex;
+                                align-items: -1 20PX;
+                                align-items: center;
+                                justify-content: space-around;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .product {
         margin-top: 40px;
         margin-bottom: 60px;
@@ -38,6 +147,8 @@ main {
         }
 
         .product-cards {
+            direction: ltr;
+
             @media #{$tab_device} {
                 .row {
                     .mr-b-sm {
@@ -67,6 +178,7 @@ main {
                 height: 330px;
                 position: relative !important;
                 transition: background-color .2s ease-in .1ms;
+                direction: rtl;
 
                 @media #{$small_mobile} {
                     height: 250px;
@@ -523,19 +635,10 @@ main {
     }
 
     .pricing {
-        .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            gap: 20px;
-
-            @media #{$large_mobile} {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-
-            @media #{$small_mobile} {
-                grid-template-columns: 1fr 1fr;
-            }
-
+        .properties {
+            margin: 0 30px;
+        }
+        .properties-card {
             .plan {
                 background: #F0F0F0;
                 border-radius: 15px;
@@ -569,44 +672,5 @@ main {
                 }
             }
         }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-.properties-card {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(30, 84, 157, 0.21), inset 0px 0px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.properties-card {
-    padding: 32px 24px;
-    .content{
-        .test {
-            overflow: hidden;
-            div {
-                &:first-child {
-                    float: right;
-                    width: 40%;
-                }
-
-                &:last-child {
-                    float: right;
-                    width: 50%;
-                }
-            }
-        }
-    }
-
-    img {
-        width: 90px;
     }
 }
