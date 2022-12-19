@@ -1,0 +1,190 @@
+.release {
+    background: #F5F5F5;
+
+    @media #{$mobile_device} {
+        margin-bottom: 20px;
+    }
+
+    .release-header {
+        padding-top: 40px;
+
+        .release-header_top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 80px;
+
+            @media #{$mobile_device} {
+                margin-bottom: 40px;
+            }
+
+            div {
+                &:first-child {
+                    svg {
+                        height: 55px;
+                    }
+                }
+
+                &:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 10px;
+
+                    span {
+                        &:first-child {
+                            font-size: $font_26;
+                            color: #1268B3;
+
+                            @media #{$large_mobile} {
+                                font-size: $font_22;
+                            }
+
+                            @media #{$small_mobile} {
+                                font-size: $font-20;
+                            }
+                        }
+
+                        &:last-child {
+                            font-size: 66px;
+                            color: #1268B3;
+                            font-weight: bold;
+
+                            @media #{$large_mobile} {
+                                font-size: 50px;
+                            }
+
+                            @media #{$small_mobile} {
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.release-items {
+    @media #{$mobile_device} {
+        margin-top: 0;
+    }
+
+    margin-top: -45px;
+
+    .large-tab {
+        ul.tabs {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            list-style: none;
+
+            li {
+                color: #404040;
+                margin-left: 30px;
+                cursor: pointer;
+                position: relative;
+                padding-bottom: 5px;
+
+                &.active {
+                    &::before {
+                        background-color: rgb(66, 113, 153);
+                        bottom: -5px;
+                        content: "";
+                        height: 3px;
+                        left: 0px;
+                        position: absolute;
+                        right: 0px;
+                        transition: left 0.267s cubic-bezier(0.1, 0.25, 0.75, 0.9) 0s, right 0.267s cubic-bezier(0.1, 0.25, 0.75, 0.9) 0s;
+                    }
+                }
+            }
+
+            .active {
+                color: #1268B3 !important;
+            }
+        }
+
+        .panes {
+            .pane {
+                display: none;
+                padding: 0;
+                color: #404040;
+                line-height: 1.8;
+
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .release--section {
+        margin: 40px 0;
+        .mainServices-section {
+
+            @media #{$xs} {
+                margin-bottom: 30px;
+            }
+
+            div.mainServices-section__tabs {
+                list-style: none;
+                padding: 10px 20px;
+                background: rgba(48, 55, 65, 0.03);
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    color: #7C7C7C;
+                    padding: 0px 5px;
+                    margin-bottom: 10px;
+
+                    &.active {
+                        color: #BE594F !important;
+                        border-right: 3px solid #BE594F;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .sub-section {
+            .sub-section__line {
+                .bodyLine {
+                    display: none;
+                    padding: 0;
+                    color: #404040;
+                    line-height: 1.8;
+                    &:first-child {
+                        display: block;
+                    }
+
+
+                    .content-releases {
+                        .file-name {
+                            padding: 10px 15px;
+                            background: rgba(190, 89, 79, 0.1);
+                            border-radius: 4px;
+                            span {
+                                color: #181818;
+                            }
+                        }
+
+                        .release-name {
+                            div {
+                                padding: 10px 15px;
+                                border-radius: 4px;
+                                span {
+                                    color: #181818;
+                                }
+
+                                &:nth-child(even) {
+                                    background: #F7F7F7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
