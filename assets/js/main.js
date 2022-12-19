@@ -94,7 +94,7 @@ $(document).ready(function () {
         $(".sub-section__panes .pane").eq(i).show();
     });
 
-    // .services--section
+    // services--section
     
     $(".mainServices-section__tabs div").click(function (event) {
         event.preventDefault();
@@ -104,6 +104,18 @@ $(document).ready(function () {
         $(this).addClass("active");
         $(".sub-section__line .bodyLine").hide();
         $(".sub-section__line .bodyLine").eq(i).show();
+    });
+
+    // laws-section
+
+    $(".mainLaws-tabs div").click(function (event) {
+        event.preventDefault();
+        $(".sub-laws__line").show();
+        var h = $(this).index(h);
+        $(".mainLaws-tabs div").removeClass("active");
+        $(this).addClass("active");
+        $(".sub-laws__line .bodyLine").hide();
+        $(".sub-laws__line .bodyLine").eq(h).show();
     });
 });
 
