@@ -117,6 +117,18 @@ $(document).ready(function () {
         $(".sub-laws__line .bodyLine").hide();
         $(".sub-laws__line .bodyLine").eq(h).show();
     });
+
+    // ministry-definition
+
+    $(".mainDefinition-tabs div").click(function (event) {
+        event.preventDefault();
+        $(".sub-definition__line").show();
+        var h = $(this).index(h);
+        $(".mainDefinition-tabs div").removeClass("active");
+        $(this).addClass("active");
+        $(".sub-definition__line .bodyLine").hide();
+        $(".sub-definition__line .bodyLine").eq(h).show();
+    });
 });
 
 

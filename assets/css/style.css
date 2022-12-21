@@ -1693,6 +1693,60 @@ footer {
     line-height: 30px;
     margin-bottom: 10px; }
 
+.ministry-definition {
+  margin: 40px 0; }
+  .ministry-definition .properties div.mainDefinition-tabs {
+    padding: 10px 20px;
+    list-style: none;
+    background: rgba(48, 55, 65, 0.03); }
+    .ministry-definition .properties div.mainDefinition-tabs div {
+      cursor: pointer;
+      color: #7C7C7C;
+      padding: 0px 5px;
+      margin-bottom: 10px; }
+      .ministry-definition .properties div.mainDefinition-tabs div.active {
+        color: #BE594F !important;
+        border-right: 3px solid #BE594F;
+        font-weight: bold; }
+  @media (max-width: 575px) {
+    .ministry-definition .sub-properties {
+      margin-top: 20px; } }
+  .ministry-definition .sub-properties .sub-definition__line .bodyLine {
+    display: none;
+    padding: 0;
+    color: #404040;
+    line-height: 1.8; }
+    .ministry-definition .sub-properties .sub-definition__line .bodyLine:first-child {
+      display: block; }
+    .ministry-definition .sub-properties .sub-definition__line .bodyLine .body-definition .img {
+      margin-bottom: 70px; }
+      .ministry-definition .sub-properties .sub-definition__line .bodyLine .body-definition .img img {
+        width: 100%;
+        border-radius: 10px; }
+    .ministry-definition .sub-properties .sub-definition__line .bodyLine .body-definition .content-body div {
+      margin-bottom: 50px; }
+      .ministry-definition .sub-properties .sub-definition__line .bodyLine .body-definition .content-body div p:first-child {
+        color: #1268B3;
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+        @media (max-width: 575px) {
+          .ministry-definition .sub-properties .sub-definition__line .bodyLine .body-definition .content-body div p:first-child {
+            font-size: 22px; } }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+          .ministry-definition .sub-properties .sub-definition__line .bodyLine .body-definition .content-body div p:first-child {
+            font-size: 24px; } }
+      .ministry-definition .sub-properties .sub-definition__line .bodyLine .body-definition .content-body div p:last-child {
+        font-size: 18px;
+        font-weight: bold;
+        opacity: 0.56; }
+        @media (max-width: 575px) {
+          .ministry-definition .sub-properties .sub-definition__line .bodyLine .body-definition .content-body div p:last-child {
+            font-size: 14px; } }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+          .ministry-definition .sub-properties .sub-definition__line .bodyLine .body-definition .content-body div p:last-child {
+            font-size: 16px; } }
+
 @font-face {
   font-family: ArabHelvetica;
   src: url(../fonts/ArabHelvetica.ttf); }

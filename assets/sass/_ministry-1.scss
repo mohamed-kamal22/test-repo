@@ -1,0 +1,93 @@
+.ministry-definition {
+    margin: 40px 0;
+
+    .properties {
+        div {
+            &.mainDefinition-tabs {
+                padding: 10px 20px;
+                list-style: none;
+                background: rgba(48, 55, 65, 0.03);
+
+                div {
+                    cursor: pointer;
+                    color: #7C7C7C;
+                    padding: 0px 5px;
+                    margin-bottom: 10px;
+
+                    &.active {
+                        color: #BE594F !important;
+                        border-right: 3px solid #BE594F;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .sub-properties {
+
+        @media #{$xs} {
+            margin-top: 20px;
+        }
+
+        .sub-definition__line {
+            .bodyLine {
+                display: none;
+                padding: 0;
+                color: #404040;
+                line-height: 1.8;
+
+                &:first-child {
+                    display: block;
+                }
+
+                .body-definition {
+                    .img {
+                        margin-bottom: 70px;
+                        img {
+                            width: 100%;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .content-body {
+                        div {
+                            margin-bottom: 50px;
+                            p {
+                                &:first-child {
+                                    color: #1268B3;
+                                    font-size: $font_26;
+                                    font-weight: $font_weight_bold;
+                                    margin-bottom: 10px;
+
+                                    @media #{$xs} {
+                                        font-size: $font_22;
+                                    }
+
+                                    @media #{$sm} {
+                                        font-size: $font_24;
+                                    }
+                                }
+
+                                &:last-child {
+                                    font-size: $font_18;
+                                    font-weight: $font_weight_bold;
+                                    opacity: 0.56;
+
+                                    @media #{$xs} {
+                                        font-size: $font-14;
+                                    }
+
+                                    @media #{$sm} {
+                                        font-size: $font-16;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
