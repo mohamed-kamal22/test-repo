@@ -1690,6 +1690,71 @@ footer {
   color: #fff;
   background: #1268B3; }
 
+.news-list .title {
+  margin-top: 50px;
+  margin-bottom: 40px; }
+  .news-list .title p {
+    font-size: 48px;
+    color: #1268B3;
+    font-weight: bold; }
+    @media (max-width: 575px) {
+      .news-list .title p {
+        font-size: 40px; } }
+.news-list .news-list_top {
+  margin-bottom: 60px; }
+  .news-list .news-list_top .image img {
+    width: 100%;
+    border-radius: 10px; }
+  .news-list .news-list_top .news-top_details p:first-child {
+    color: #404040;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 25px; }
+    @media (max-width: 575px) {
+      .news-list .news-list_top .news-top_details p:first-child {
+        font-size: 26px; } }
+  .news-list .news-list_top .news-top_details p:nth-child(2) {
+    color: #000000c2;
+    font-size: 18px;
+    margin-bottom: 30px; }
+  .news-list .news-list_top .news-top_details a {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background: #1268B3;
+    border-radius: 16px;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-around; }
+.news-list .news-list_bottom .news-bottom_date {
+  margin-bottom: 5px; }
+  .news-list .news-list_bottom .news-bottom_date span {
+    color: #00000082;
+    font-size: 14px; }
+.news-list .news-list_bottom .news-bottom_details {
+  border-top: 1px solid #000000;
+  padding-top: 15px;
+  margin-bottom: 35px; }
+  .news-list .news-list_bottom .news-bottom_details p:first-child {
+    color: #1268B3;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 16px; }
+  .news-list .news-list_bottom .news-bottom_details p:nth-child(2) {
+    color: #000000c2;
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .news-list .news-list_bottom .news-bottom_details a {
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 16px;
+    display: flex;
+    color: #BE594F;
+    align-items: center;
+    justify-content: space-between; }
+
 .initiatives-inner .initiatives-inner_title {
   background: #ECEDEF;
   height: 450px; }

@@ -1,0 +1,99 @@
+.news-list {
+    .title {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        p {
+            font-size: 48px;
+            color: #1268B3;
+            font-weight: $font_weight_bold;
+
+            @media #{$xs} {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .news-list_top {
+        margin-bottom: 60px;
+        .image {
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .news-top_details {
+            p {
+                &:first-child {
+                    color: #404040;
+                    font-weight: $font_weight_bold;
+                    font-size: $font_32;
+                    margin-bottom: 25px;
+
+                    @media #{$xs} {
+                        font-size: $font_26;
+                    }
+                }
+
+                &:nth-child(2) {
+                    color: #000000c2;
+                    font-size: $font-18;
+                    margin-bottom: 30px;
+                }
+            }
+
+            a {
+                width: 150px;
+                height: 40px;
+                cursor: pointer;
+                background: #1268B3;
+                border-radius: 16px;
+                display: flex;
+                color: #ffffff;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    .news-list_bottom {
+        .news-bottom_date {
+            margin-bottom: 5px;
+            span {
+                color: #00000082;
+                font-size: $font-14;
+            }
+        }
+
+        .news-bottom_details {
+            border-top: 1px solid #000000;
+            padding-top: 15px;
+            margin-bottom: 35px;
+            p {
+                &:first-child {
+                    color: #1268B3;
+                    font-weight: $font_weight_bold;
+                    font-size: $font_20;
+                    margin-bottom: 16px;
+                }
+
+                &:nth-child(2) {
+                    color: #000000c2;
+                    font-size: $font-16;
+                    margin-bottom: 10px;
+                }
+            }
+
+            a {
+                width: 110px;
+                height: 40px;
+                cursor: pointer;
+                border-radius: 16px;
+                display: flex;
+                color: #BE594F;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
