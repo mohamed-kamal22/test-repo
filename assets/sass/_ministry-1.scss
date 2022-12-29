@@ -1,6 +1,10 @@
 .ministry-definition {
     margin: 40px 0;
 
+    .paddingItem {
+        padding-right: 0;padding-left: 0;
+    }
+
     .properties {
         div {
             &.mainDefinition-tabs {

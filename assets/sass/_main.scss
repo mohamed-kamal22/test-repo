@@ -33,7 +33,7 @@ main {
                         }
     
                         &:first-child {
-                            background-image: url('../../img/test.jpg');
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.63)),url('../../img/test.jpg');
                             background-size: cover;
                             background-repeat: no-repeat;
                             background-position: center;
@@ -41,7 +41,7 @@ main {
                         }
     
                         &:nth-child(2) {
-                            background-image: url('../../img/test1.jpg');
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.63)),url('../../img/test1.jpg');
                             background-size: cover;
                             background-repeat: no-repeat;
                             background-position: center;
@@ -113,6 +113,7 @@ main {
     .product {
         margin-top: 40px;
         margin-bottom: 60px;
+        position: relative;
 
         .product-header {
             margin-bottom: 40px;
@@ -247,6 +248,42 @@ main {
                         }
                     }
                 }
+            }
+        }
+
+        .more {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 140px;
+            background: #1268B3;
+            height: 90px;
+            border-radius: 0 50px 50px 0;
+            padding-right: 10px;
+
+            a {
+                font-size: 20px;
+                color: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+
+            i {
+                width: 34px;
+                height: 34px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
             }
         }
     }
