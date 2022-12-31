@@ -578,44 +578,135 @@ header {
         align-items: center;
 
         .content-news {
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
+            position: relative;
 
-            div {
-                &:first-child {
+            .items-news {
+                direction: ltr;
+            
+                .slick-list {
+                    .slick-track {
+                        padding-top: 0!important;
+                    }
+                }
+            
+                button {
+                    &.slick-arrow {
+                        position: absolute;
+                        border: 0;
+                        padding: 0;
+                        z-index: 2;
+                        cursor: pointer;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: auto;
+                        background: none;
+            
+                        i {
+                            font-size: $font-30;
+                            color: #2045704d;
+                            @include transition(.2s);
+                        }
+                    }
+            
+                    &.slick-prev {
+                        left: -40px;
+            
+                        @media #{$laptop} {
+                            left: -20px;
+                        }
+            
+                        @media #{$large1} {
+                            left: -30px;
+                        }
+            
+                        @media #{$lg} {
+                            left: -27px;
+                        }
+            
+                        @media #{$md} {
+                            left: -25px;
+                        }
+            
+                        @media #{$sm} {
+                            left: -10px;
+                        }
+                    }
+            
+                    &.slick-next {
+                        right: -40px;
+            
+                        @media #{$laptop} {
+                            right: -20px;
+                        }
+            
+                        @media #{$large1} {
+                            right: -30px;
+                        }
+            
+                        @media #{$lg} {
+                            right: -27px;
+                        }
+            
+                        @media #{$md} {
+                            right: -20px;
+                        }
+            
+                        @media #{$sm} {
+                            right: -10px;
+                        }
+                    }
+                }
+            
+                .properties {
+                    direction: rtl;
                     display: flex;
                     align-items: center;
 
-                    @media #{$tab_device} {
-                        width: 80%;
+                    i {
+                        color: #fff;
                     }
-
-                    @media #{$large_mobile} {
-                        width: 70%;
-                    }
-
-                    @media #{$small_mobile} {
-                        width: 70%;
-                    }
-
-                    p {
+            
+                    a {
                         margin: 0 5px;
+                        color: #ffffff;
+                        cursor: pointer;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
+            
+                        &:hover {
+                            color: #fff;
+                        }
+
+                        @media #{$tab_device} {
+                            width: 80%!important;
+                        }
+    
+                        @media #{$large_mobile} {
+                            width: 70%!important;
+                        }
+    
+                        @media #{$small_mobile} {
+                            width: 70%!important;
+                        }
+                    }
+                }
+            }
+
+            .readMore {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 9;
+                a {
+                    color: #fff;
+                    &:hover {
+                        color: #fff;
                     }
                 }
 
-                &:last-child {
-                    display: flex;
-                    align-items: baseline;
-
-                    a {
-                        margin: 0 5px;
-                        text-decoration: none;
-                        color: #fff;
-                    }
+                i {
+                    color: #fff;
                 }
             }
         }

@@ -1,4 +1,59 @@
 $(document).ready(function () {
+    $('.items-news').slick({
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2100,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            },
+        ]
+    });
+
     $('.latest-items-product').slick({
         dots: false,
         infinite: true,
@@ -119,8 +174,6 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 1900,
         arrows: false,
-        prevArrow: '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="ti-angle-right"></i></button>',
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -176,8 +229,6 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 1900,
         arrows: false,
-        prevArrow: '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="ti-angle-right"></i></button>',
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
